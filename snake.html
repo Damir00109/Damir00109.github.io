@@ -16,8 +16,6 @@
 			}
 		</style>
 		<script>
-			letter = ["Г", "Д", "Е", "Е", "С", "Т", "Ж", "У", " "];
-			btn = new Array(9);
 		</script>
 	</head>
 	<body>
@@ -25,10 +23,10 @@
 		</div>
 		<script>
 			for(i=0; i<9; i++){
-				btn[i] = document.createElement("input");
-				btn[i].type = "button";
-				btn[i].value = letter[i];
-				document.getElementById('puzzle').appendChild(btn[i]);
+				btn = document.createElement("input");
+				btn.type = "button";
+				btn.value = "Ж";
+				document.getElementById('puzzle').appendChild(btn);
 			}
 		</script>
 	</body>
