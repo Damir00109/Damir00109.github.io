@@ -16,6 +16,11 @@
 			}
 		</style>
 		<script>
+			letter = ["Г", "Д", "Е", "Е", "С", "Т", "Ж", "У", " "];
+			btn = new Array(9);
+			function play(B){
+				console.log(B)
+			}
 		</script>
 	</head>
 	<body>
@@ -23,10 +28,11 @@
 		</div>
 		<script>
 			for(i=0; i<9; i++){
-				btn = document.createElement("input");
-				btn.type = "button";
-				btn.value = "Ж";
-				document.getElementById('puzzle').appendChild(btn);
+				btn[i] = document.createElement("input");
+				btn[i].type = "button";
+				btn[i].value = letter[i];
+				btn[i].onclick = function() {play(this)};
+				document.getElementById('puzzle').appendChild(btn[i]);
 			}
 		</script>
 	</body>
