@@ -17,7 +17,7 @@
 		</style>
 		<script>
 			letter = ["Б", "Е", "З", "О", "П", "А", "С", "Н", "О", "Ь", "С", "Т"," "];
-			btn = new Array(12);
+			btn = new Array(13);
 			function play(B){
 				n = btn.indexOf(B);
 				m = letter.indexOf(' ');
@@ -34,7 +34,7 @@
 		<div id=puzzle>
 		</div>
 		<script>
-			for(i=0; i<12; i++){
+			for(i=0; i<13; i++){
 				btn[i] = document.createElement("input");
 				btn[i].type = "button";
 				btn[i].value = letter[i];
